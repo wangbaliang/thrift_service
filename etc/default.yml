@@ -1,0 +1,56 @@
+mysql_db:
+  tutor:
+    url: "mysql://?charset=utf8"
+    pool_size: 5
+    pool_recycle: 1800
+    echo: False
+
+redis_server:
+  tutor:
+    host: ""
+    port: 6379
+    password: ""
+
+redis_db:
+  class:
+    server: ""
+    config:
+      db: 10
+  sms_code:
+    server: ""
+    config:
+      db: 8
+
+thrift_service:
+  tutor:
+    host: "0.0.0.0"
+    port: 
+  upland_server:
+    host: "127.0.0.1"
+    port: 
+
+study_year:
+  start_day: "09-01"
+
+smtp:
+  host: ""
+  port: 25
+  user_name: ""
+  password: ""
+
+etutor_web:
+  url: ""
+
+settings:
+  coach_invite_limit_hour: 26
+  assign_student_hour: 3
+
+
+testing: true
+
+education_admin_email_list:
+  - "jiandanjiaowu@jiandan100.cn"
+
+education_admin_phone_list:
+  - "10000000"
+
